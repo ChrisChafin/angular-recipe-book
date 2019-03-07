@@ -1,0 +1,20 @@
+<ul class="card-title">
+  <li class="name"><h3>{{ name }}</h3></li>
+  <li><like [iLike]="iLike" style="z-index: 999;"></like></li>
+</ul>
+<div class="card-subtitle" >
+  <h4>Ingredients:</h4>
+</div>
+<div class="card-text">
+  <ul>
+    <li *ngFor="let ingredient of ingredients">
+        <input type="checkbox">{{ ingredient }}
+    </li>
+  </ul>
+  <div>
+    <img class="recipe-img card-img-top" src="{{ imgSource }}" />
+  </div>
+
+</div>
+<i class="fas fa-angle-left" (click)="prev()"></i>
+<i class="fas fa-angle-right" (click)="next()"></i>

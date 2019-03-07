@@ -1,0 +1,16 @@
+.parent:after {
+  content: '';
+  background: url("/src/assets/food.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left: 0;
+  bottom: 183px;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2;
+  margin: auto;
+  min-height: 50%;
+  min-width: 50%;
+}

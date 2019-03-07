@@ -1,0 +1,20 @@
+.like {
+  color: rgb(112, 112, 112);
+  cursor: pointer;
+  padding-left: 200px;
+}
+p {
+  color: rgb(112, 112, 112);
+  margin-top: 0px;
+  margin-bottom: unset;
+}
+
+.highlighted {
+  color: rgb(255, 89, 178);
+}
+
+@media only screen and (max-width: 768px){
+  .like {
+    padding-left: 125px;
+  }
+}
