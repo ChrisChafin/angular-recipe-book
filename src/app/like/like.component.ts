@@ -12,13 +12,13 @@ export class LikeComponent implements OnInit {
   ngOnInit() {
   }
 
-  @Input() iLike = false;
+  @Input() iLike: boolean;
 
-  @Output() change = new EventEmitter();
+  @Output() change = new EventEmitter<boolean>();
 
   onClick() {
     this.iLike = !this.iLike;
-    this.change.emit({newValue: this.iLike})
+    this.change.emit(this.iLike)
   }
 
 }

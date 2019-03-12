@@ -1,6 +1,6 @@
 <ul class="card-title">
   <li class="name"><h3>{{ name }}</h3></li>
-  <li><like [iLike]="iLike" style="z-index: 999;"></like></li>
+  <li><like (change)="likeStatus($event)" [iLike]="this.like" style="z-index: 999;"></like></li>
 </ul>
 <div class="card-subtitle" >
   <h4>Ingredients:</h4>
